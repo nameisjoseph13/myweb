@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Site</title>
+    </head>
+    
+    <body style="background-color:cornsilk">
+        <h1>Contact Details :</h1>
+        <p style="font-size:larger;"><strong>Welcome</strong> to my page of personal details...You can contact me by leaving a message here....by entering your details....</p>
+        <p style="font-size:larger;">I will approach you in time....</p>
+        <hr>
+
+        <p><strong>ENTER YOUR DETAILS :</strong></p>
+        <form action ="mailto:nameisjoseph@gmail.com" method="post" enctype="text/plain">
+            <img src= "Picsart_23-02-18_18-25-37-439 (1).png" alt="IMAGE" width="1000px" height="1000px" style="position:absolute; top:12px;bottom:10px;right:75px">
+           <fieldset style="display: inline-block;background-color:rgb(142, 228, 55)">
+
+            <br>
+            <table>
+                <tr>
+                     <td><label>Today's Date :</label></td>
+                    <td><div id="current_date"></p>
+                         <script>
+                         date = new Date();
+                         year = date.getFullYear();
+                         month = date.getMonth() + 1;
+                         day = date.getDate();
+                         document.getElementById("current_date").innerHTML = " " + day + " - " + month + " - " + year;
+                         </script>  
+                     </td>  
+                </tr> 
+             </table>
+             <br>
+             <label>Full Name : </label>
+             <input type ="text" name = "NAME" size="30" value = "">
+             <br>
+             <br>
+           <fieldset style="display: inline-block;">
+             <legend>Gender : </legend>
+             <input type ="radio" id ="Choice1" name = "GENDER" value = "MALE">
+             <label for="Choice1">Male</label>
+             <input type ="radio" id ="Choice2" name = "GENDER" value = "FEMALE">
+             <label for="Choice2">Female</label>
+            </fieldset>
+             <br>
+             <br>
+              <label>Age : </label>
+              <input type ="number" name = "AGE" min="12" max="90" value = "">
+             <br>
+             <br>
+              <label>Email : </label>
+              <input type = "email" name = "EMAIL" size="45" value = "">
+             <br>
+             <br>
+              <label>Your Message : </label>
+              <br>
+              <textarea name = "YOUR MESSAGE" rows="10" cols="40" value = ""> </textarea>
+            <br>
+             <br>
+              <label>Secret Message(Maximum 25 words) : </label>
+              <input type ="password" name = "SECRETMSG" maxlength ="25" value = "">
+             <br>
+             <br>
+             <fieldset style="display: inline-block;">
+                <legend>RATINGS : </legend>
+                <input type ="radio" id ="Choice1" name = "RATINGS" value = "1">
+                <label for="Choice1">1</label>
+                <input type ="radio" id ="Choice2" name = "RATINGS" value = "2">
+                <label for="Choice2">2</label>
+                <input type ="radio" id ="Choice3" name = "RATINGS" value = "3">
+                <label for="Choice1">3</label>
+                <input type ="radio" id ="Choice4" name = "RATINGS" value = "4">
+                <label for="Choice2">4</label>
+                <input type ="radio" id ="Choice5" name = "RATINGS" value = "5">
+                <label for="Choice1">5</label>
+            </fieldset>
+            <br>
+            <br>
+                <input type="submit" style= "background-color:rgb(247, 61, 61);">
+            </fieldset>
+        </form>
+    </body>
